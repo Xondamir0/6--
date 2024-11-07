@@ -1,0 +1,229 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    padding-top: 22px;
+    background: rgb(243, 215, 183);
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.header__link {
+    color: #333333;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+}
+
+.header__link:hover {
+    color: red;
+}
+
+.hero {}
+
+.hero__wrapper {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.hero__title {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    width: 447px;
+    margin: 47px 0;
+}
+
+.hero__text {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 464px;
+    margin: 47px 0;
+}
+
+.hero__button {
+    border-radius: 100px;
+    padding: 15px;
+    background: rgb(10, 119, 95);
+    width: 193px;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.hero__button:hover {
+    background-color: grey;
+
+}
+
+.hero__dumaloq {
+    top: 130px;
+    right: 0;
+    position: absolute;
+    top: 0;
+
+}
+
+.hero__right::before {
+    position: absolute;
+    z-index: 2;
+    top: -60px;
+    right: 630px;
+    background-image: url("./image 40.png");
+    width: 160px;
+    height: 160px;
+    background-position: center;
+    display: block;
+    content: "";
+    transform: rotate(0deg);
+    animation-name: spiner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes spiner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero__textbox {
+
+    margin-bottom: 257px;
+
+}
+
+.section {
+    background-color: #ffffff;
+    padding-top: 108px;
+}
+
+.section__title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section__content {
+    display: flex;
+}
+
+.section__right-title {
+    color: rgb(51, 51, 51);
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.section__right-text {
+    color: rgb(51, 51, 51);
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 468.41px;
+}
+
+.section__right {
+    margin-left: 70px;
+}
+
+.section__wrapper{
+    animation-name: wrapper;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wrapper {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.footer{
+    width: 1440px;
+    height: 160px;
+    background: rgb(243, 215, 183);
+}
+
+.footer__content{
+
+    padding-top: 62px;
+    padding-bottom: 3px;
+}
+
+.footer__link{
+    color: #333333;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+}
+
+.footer__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
